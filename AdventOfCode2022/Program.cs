@@ -6,7 +6,7 @@ namespace AdventOfCode2022
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Foo");
+            Console.WriteLine("Foo2");
         }
     }
 }
