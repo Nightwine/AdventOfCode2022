@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-
-namespace AdventOfCode2022.DayTwo {
+﻿namespace AdventOfCode2022.DayTwo {
     public class DayTwo
     {
         private readonly string[] _inputLines;
 
         public DayTwo(string actionList) {
-            _inputLines = actionList.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+            _inputLines = actionList.SplitOnNewline();
         }
 
         public int GetScoreAsActions() {

@@ -8,7 +8,7 @@ namespace AdventOfCode2022.DayFour {
 
         public DayFour(string sectionAssignmentList) {
             _elfPairs = new List<WorkPair>();
-            foreach (var pairAssignment in sectionAssignmentList.Split(new[] { Environment.NewLine }, StringSplitOptions.None)) {
+            foreach (var pairAssignment in sectionAssignmentList.SplitOnNewline()) {
                 _elfPairs.Add(new WorkPair(pairAssignment));
             }
         }

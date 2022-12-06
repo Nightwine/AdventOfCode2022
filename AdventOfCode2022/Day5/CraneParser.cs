@@ -9,7 +9,7 @@ namespace AdventOfCode2022.Day5 {
             var directions = new List<string>();
             var inDirections = false;
 
-            foreach (var line in craneState.Split(new[] { Environment.NewLine}, StringSplitOptions.None)) {
+            foreach (var line in craneState.SplitOnNewline()) {
                 if (string.IsNullOrWhiteSpace(line)) {
                     inDirections = true;
                     continue;

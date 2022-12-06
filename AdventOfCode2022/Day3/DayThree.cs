@@ -8,7 +8,7 @@ namespace AdventOfCode2022.DayThree {
 
         public DayThree(string packList) {
             _packs = new List<Pack>();
-            foreach (var packContents in packList.Split(new[] {Environment.NewLine}, StringSplitOptions.None)) {
+            foreach (var packContents in packList.SplitOnNewline()) {
                 _packs.Add(new Pack(packContents));
             }
         }
