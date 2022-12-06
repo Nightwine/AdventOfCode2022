@@ -8,7 +8,7 @@ namespace AdventOfCode2022.DayOne
         private readonly List<int> _packs;
 
         public DayOne(string calorieList) {
-            var inputLines = calorieList.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+            var inputLines = calorieList.SplitOnNewline();
 
             var packCalories = 0;
             _packs = new List<int>();
